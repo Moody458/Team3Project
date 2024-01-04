@@ -1,0 +1,27 @@
+* {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+header {
+    background-image: url("Images/bgk-header.png");
+    background-size: auto;
+}
+
+#mainVideo {
+    background-image: url("Images/bgk-middle.png");
+}
+
+#mainTeam {
+    background-image: url("Images/bgk-header.png");
+}
+
+footer {
+    background-image: url("Images/bgk-footer.png");
+}
