@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+body {
+    max-width: 1200px;
+}
+
 html {
     box-sizing: border-box;
     font-size: 62.5%;
