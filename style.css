@@ -1,31 +1,123 @@
 * {
-    box-sizing: inherit;
-    margin: 0;
-    padding: 0;
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    max-width: 1200px;
+  max-width: 1200px;
 }
 
 html {
-    box-sizing: border-box;
-    font-size: 62.5%;
+  box-sizing: border-box;
+  font-size: 62.5%;
 }
 
 header {
-    background-image: url("Images/bgk-header.png");
-    background-size: auto;
+  background-image: url("Images/bgk-header.png");
+  background-size: auto;
 }
 
 #mainVideo {
-    background-image: url("Images/bgk-middle.png");
+  background-image: url("Images/bgk-middle.png");
 }
 
 #mainTeam {
-    background-image: url("Images/bgk-header.png");
+  background-image: url("Images/bgk-header.png");
+  color: white;
+  text-align: center;
+  padding: 40px;
+}
+
+.mainTeam__container {
+  display: flex;
+  justify-content: center;
+  column-gap: 15px;
+}
+
+.polaroidFrame {
+  background: white;
+  width: 180px;
+  height: 180px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.polaroidFrame__name {
+  background-color: transparent;
+  width: 180px;
+  height: 70px;
+  border: solid 0.3px white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.mainTeam__container2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 15px;
+}
+
+#mainLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* TO ADJUST! */
+  column-gap: 80px;
+  margin: 50px 0;
+}
+
+.mainLogo__section__left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 20px;
+}
+
+.mainLogo__input {
+  width: 300px;
+  height: 30px;
+  border-radius: 3px;
+  border: solid 0.1px #e5e5e5;
+  padding: 15px;
+}
+
+::placeholder {
+  color: #e5e5e5;
+}
+
+.mainLogo__textarea {
+  width: 300px;
+  border-radius: 3px;
+  border: solid 0.1px #e5e5e5;
+  padding: 10px 0 0 15px;
+}
+
+.mainLogo__section__right {
+}
+
+.mainLogo__section__right__grid {
+  display: grid;
+  grid-template-columns: 150px 150px;
+  grid-template-rows: 75px 75px 75px 75px 75px;
+  column-gap: 20px;
+  justify-items: stretch;
+  align-items: stretch;
+}
+
+.mainLogo__grid__item {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
 }
 
 footer {
-    background-image: url("Images/bgk-footer.png");
+  background-image: url("Images/bgk-footer.png");
 }
