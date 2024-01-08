@@ -2,6 +2,9 @@
   box-sizing: inherit;
   margin: 0;
   padding: 0;
+
+  /* Added Roboto as universal but some sections need another font */
+  font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -36,6 +39,11 @@ header {
   font-size: 1.5rem;
 }
 
+.text__title__mainTeam {
+  font-family: "Playfair Display", serif;
+  font-weight: 100;
+}
+
 .line {
   color: #e5e5e5;
 }
@@ -66,13 +74,14 @@ header {
   justify-content: center;
   align-items: center;
   margin-bottom: 50px;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: bold;
 }
 
 .polaroidFrame__name__job {
-  font-size: 1.4rem;
+  font-size: 1rem;
   margin-top: 5px;
+  font-weight: 50;
 }
 
 .mainTeam__container2 {
@@ -80,17 +89,37 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  row-gap: 15px;
+  margin: 30px 0;
+  row-gap: 30px;
   font-size: 1.5rem;
+  font-weight: 100;
+}
+
+/* Double check if this general style for the BUTTONS works for you guys as well */
+.button {
+  background-color: transparent;
+  border: solid 1.5px;
+  border-color: #68dacd;
+  border-radius: 3px;
+  color: #68dacd;
+  width: 100px;
+  height: 35px;
+  box-shadow: none;
+  font-weight: 500;
+}
+
+/* I have created an ID for one of the button to better fit the content */
+#button__weAreHiring {
+  width: 120px;
+  height: 40px;
 }
 
 #mainLogo {
   display: flex;
   justify-content: center;
-  align-items: center;
   /* TO ADJUST! */
   column-gap: 80px;
-  margin: 50px 0;
+  margin: 70px 0;
 }
 
 .mainLogo__section__left {
@@ -100,12 +129,18 @@ header {
   row-gap: 20px;
 }
 
+.h2__mainLogo__section__left {
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+}
+
 .mainLogo__input {
   width: 300px;
   height: 30px;
   border-radius: 3px;
   border: solid 0.1px #e5e5e5;
   padding: 15px;
+  font-family: "Roboto", sans-serif;
 }
 
 ::placeholder {
@@ -117,9 +152,7 @@ header {
   border-radius: 3px;
   border: solid 0.1px #e5e5e5;
   padding: 10px 0 0 15px;
-}
-
-.mainLogo__section__right {
+  font-family: "Roboto", sans-serif;
 }
 
 .mainLogo__section__right__grid {
@@ -127,13 +160,11 @@ header {
   grid-template-columns: 150px 150px;
   grid-template-rows: 75px 75px 75px 75px 75px;
   column-gap: 20px;
-  justify-items: stretch;
-  align-items: stretch;
 }
 
 .mainLogo__grid__item {
-  width: 80%;
-  height: 80%;
+  width: 70%;
+  height: 70%;
   object-fit: contain;
 }
 
