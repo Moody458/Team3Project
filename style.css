@@ -7,6 +7,7 @@
   font-family: "Roboto", sans-serif;
 }
 
+
 body {
   max-width: 1200px;
 }
@@ -17,8 +18,38 @@ html {
 }
 
 header {
-  background-image: url("Images/bgk-header.png");
-  background-size: auto;
+    background-image: url("Images/bgk-header.png");
+    background-size:cover; 
+}
+
+#headerTop {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1rem;
+}
+
+#headerNav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#headerNavList {
+    list-style: none;
+    display: flex;
+}
+
+.headerNavListItem {
+    padding: 0 1rem;
+    margin: 0;
+}
+
+#headerBottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem 0    ;
 }
 
 #mainVideo {
