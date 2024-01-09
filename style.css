@@ -1,16 +1,20 @@
 * {
-    box-sizing: inherit;
-    margin: 0;
-    padding: 0;
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+
+  /* Added Roboto as universal but some sections need another font */
+  font-family: "Roboto", sans-serif;
 }
 
-/* body {
-    max-width: 1200px;
-} */
+
+body {
+  max-width: 1200px;
+}
 
 html {
-    box-sizing: border-box;
-    font-size: 62.5%;
+  box-sizing: border-box;
+  font-size: 62.5%;
 }
 
 header {
@@ -48,24 +52,168 @@ header {
     padding: 10rem 0    ;
 }
 
-
-
-
-
-
-
-
-
-
-
 #mainVideo {
-    background-image: url("Images/bgk-middle.png");
+  background-image: url("Images/bgk-middle.png");
 }
 
 #mainTeam {
-    background-image: url("Images/bgk-header.png");
+  background-image: url("Images/bgk-header.png");
+  color: white;
+  text-align: center;
+  padding: 40px;
+}
+
+.title__mainTeam {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 1.5rem;
+}
+
+.text__title__mainTeam {
+  font-family: "Playfair Display", serif;
+  font-weight: 100;
+  font-size: 1.7rem;
+}
+
+.text__title__mainTeam2 {
+  font-family: "Playfair Display", serif;
+  font-weight: 100;
+  font-size: 1.3rem;
+}
+
+.line {
+  color: #625f7f;
+}
+
+.mainTeam__container {
+  display: flex;
+  justify-content: center;
+  column-gap: 15px;
+}
+
+.polaroidFrame {
+  background: white;
+  width: 180px;
+  height: 180px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.polaroidFrame__name {
+  background-color: transparent;
+  width: 180px;
+  height: 70px;
+  border: solid 0.3px white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.polaroidFrame__name__job {
+  font-size: 1rem;
+  margin-top: 5px;
+  font-weight: 50;
+}
+
+.mainTeam__container2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+  row-gap: 30px;
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+/* Double check if this general style for the BUTTONS works for you guys as well */
+.button {
+  background-color: transparent;
+  border: solid 1.5px;
+  border-color: #68dacd;
+  border-radius: 3px;
+  color: #68dacd;
+  width: 100px;
+  height: 35px;
+  box-shadow: none;
+  font-weight: 500;
+}
+
+/* I add some simple effect to them  */
+.button:hover {
+  background-color: #68dacd;
+  color: white;
+}
+
+/* I have created an ID for one of the button to better fit the content */
+#button__weAreHiring {
+  width: 120px;
+  height: 40px;
+}
+
+#mainLogo {
+  display: flex;
+  justify-content: center;
+  /* TO ADJUST! */
+  column-gap: 80px;
+  margin: 70px 0;
+}
+
+.mainLogo__section__left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 20px;
+}
+
+.h2__mainLogo__section__left {
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.mainLogo__input {
+  width: 300px;
+  height: 30px;
+  border-radius: 3px;
+  border: solid 0.1px #e5e5e5;
+  padding: 15px;
+  font-family: "Roboto", sans-serif;
+}
+
+::placeholder {
+  color: #e5e5e5;
+}
+
+.mainLogo__textarea {
+  width: 300px;
+  border-radius: 3px;
+  border: solid 0.1px #e5e5e5;
+  padding: 10px 0 0 15px;
+  font-family: "Roboto", sans-serif;
+}
+
+.mainLogo__section__right__grid {
+  display: grid;
+  margin-top: 5px;
+  grid-template-columns: 150px 150px;
+  grid-template-rows: 75px 75px 75px 75px 75px;
+  column-gap: 20px;
+}
+
+.mainLogo__grid__item {
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
 }
 
 footer {
-    background-image: url("Images/bgk-footer.png");
+  background-image: url("Images/bgk-footer.png");
 }
