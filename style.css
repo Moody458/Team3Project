@@ -2,15 +2,15 @@
   box-sizing: inherit;
   margin: 0;
   padding: 0;
-
+  line-height: 2.6rem;
   /* Added Roboto as universal but some sections need another font */
   font-family: "Roboto", sans-serif;
 }
 
 
-body {
+/* body {
   max-width: 1200px;
-}
+} */
 
 html {
   box-sizing: border-box;
@@ -19,13 +19,40 @@ html {
 
 header {
     background-image: url("Images/bgk-header.png");
-    background-size:cover; 
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    color: white;
+    
+}
+
+#headerLine {
+  color: #68dacd;
+  margin-bottom: 1%;
+}
+
+header p {
+  margin-bottom: 2%;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+  font-weight: 550;
+  font-size: 1.25rem;
+}
+
+#aHome {
+  color: #68dacd;
 }
 
 #headerTop {
     display: flex;
     justify-content: space-around;
     padding-top: 1rem;
+    padding-bottom: 10rem;
 }
 
 #headerNav {
@@ -49,7 +76,37 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10rem 0    ;
+    padding-bottom: 14rem;
+}
+
+#mainHeader {
+  display: flex;
+  align-items: center;
+  justify-content:center  ;
+  padding: 10rem 0;
+}
+
+#mainHeaderImg {
+  height: 100%;
+  margin-right: 8%;
+}
+
+#mainHeaderRight {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  align-self: flex-start;
+}
+
+#mainHeaderH {
+  font-size: 2.4rem;
+  padding-bottom: 1.3rem;
+}
+
+#mainHeaderP {
+  font-size: 1.3rem; 
+  padding-bottom: 2.6rem; 
 }
 
 #mainVideo {
