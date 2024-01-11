@@ -2,11 +2,111 @@
   box-sizing: inherit;
   margin: 0;
   padding: 0;
+  line-height: 2.6rem;
+  /* Added Roboto as universal but some sections need another font */
+  font-family: "Roboto", sans-serif;
 }
+
+
+/* body {
+  max-width: 1200px;
+} */
 
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+}
+
+header {
+    background-image: url("Images/bgk-header.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    color: white;
+    
+}
+
+#headerLine {
+  color: #68dacd;
+  margin-bottom: 1%;
+}
+
+header p {
+  margin-bottom: 2%;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+  font-weight: 550;
+  font-size: 1.25rem;
+}
+
+#aHome {
+  color: #68dacd;
+}
+
+#headerTop {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1rem;
+    padding-bottom: 10rem;
+}
+
+#headerNav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#headerNavList {
+    list-style: none;
+    display: flex;
+}
+
+.headerNavListItem {
+    padding: 0 1rem;
+    margin: 0;
+}
+
+#headerBottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 14rem;
+}
+
+#mainHeader {
+  display: flex;
+  align-items: center;
+  justify-content:center  ;
+  padding: 10rem 0;
+}
+
+#mainHeaderImg {
+  height: 100%;
+  margin-right: 8%;
+}
+
+#mainHeaderRight {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  align-self: flex-start;
+}
+
+#mainHeaderH {
+  font-size: 2.4rem;
+  padding-bottom: 1.3rem;
+}
+
+#mainHeaderP {
+  font-size: 1.3rem; 
+  padding-bottom: 2.6rem; 
 }
 
 #mainvideo {
@@ -102,4 +202,306 @@ hr {
 
 .ul_li_two li {
   border-top: 1px solid #99999940;
+}
+
+#mainTeam {
+  background-image: url("Images/bgk-header.png");
+  color: white;
+  text-align: center;
+  padding: 40px;
+}
+
+.title__mainTeam {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 1.5rem;
+}
+
+.text__title__mainTeam {
+  font-family: "Playfair Display", serif;
+  font-weight: 100;
+  font-size: 1.7rem;
+}
+
+.text__title__mainTeam2 {
+  font-family: "Playfair Display", serif;
+  font-weight: 100;
+  font-size: 1.3rem;
+}
+
+.line {
+  color: #625f7f;
+}
+
+.mainTeam__container {
+  display: flex;
+  justify-content: center;
+  column-gap: 15px;
+}
+
+.polaroidFrame {
+  background: white;
+  width: 180px;
+  height: 180px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.polaroidFrame__name {
+  background-color: transparent;
+  width: 180px;
+  height: 70px;
+  border: solid 0.3px white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.polaroidFrame__name__job {
+  font-size: 1rem;
+  margin-top: 5px;
+  font-weight: 50;
+}
+
+.mainTeam__container2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+  row-gap: 30px;
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+/* Double check if this general style for the BUTTONS works for you guys as well */
+.button {
+  background-color: transparent;
+  border: solid 1.5px;
+  border-color: #68dacd;
+  border-radius: 3px;
+  color: #68dacd;
+  width: 100px;
+  height: 35px;
+  box-shadow: none;
+  font-weight: 500;
+}
+
+/* I add some simple effect to them  */
+.button:hover {
+  background-color: #68dacd;
+  color: white;
+}
+
+/* I have created an ID for one of the button to better fit the content */
+#button__weAreHiring {
+  width: 120px;
+  height: 40px;
+}
+
+#mainLogo {
+  display: flex;
+  justify-content: center;
+  /* TO ADJUST! */
+  column-gap: 80px;
+  margin: 70px 0;
+}
+
+.mainLogo__section__left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 20px;
+}
+
+.h2__mainLogo__section__left {
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.mainLogo__input {
+  width: 300px;
+  height: 30px;
+  border-radius: 3px;
+  border: solid 0.1px #e5e5e5;
+  padding: 15px;
+  font-family: "Roboto", sans-serif;
+}
+
+::placeholder {
+  color: #e5e5e5;
+}
+
+.mainLogo__textarea {
+  width: 300px;
+  border-radius: 3px;
+  border: solid 0.1px #e5e5e5;
+  padding: 10px 0 0 15px;
+  font-family: "Roboto", sans-serif;
+}
+
+.mainLogo__section__right__grid {
+  display: grid;
+  margin-top: 5px;
+  grid-template-columns: 150px 150px;
+  grid-template-rows: 75px 75px 75px 75px 75px;
+  column-gap: 20px;
+}
+
+.mainLogo__grid__item {
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+}
+
+/* here is the footer section and mathieus work */
+
+footer {
+  background-image: url("Images/bgk-footer.png");
+  width: 1200px;
+  height: 800 px;
+  display: flex;
+  color: white;
+}
+
+/* footleft elements :  */
+#footLeft {
+  margin-left: 200px;
+}
+
+#textTajam {
+  font-size: larger;
+  width: 280px;
+  padding: 7px;
+}
+
+#subtitleBox {
+  display: flex;
+  width: 280px;
+  justify-content: center;
+  transition: transform 0.6s;
+}
+
+.subtitleLaw {
+  font-size: larger;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 80px;
+  padding-top: 15px;
+  transition: transform 0.6s;
+}
+
+.subtitleLaw:hover {
+  transform: scale(1.2);
+  color: #5d57c3;
+}
+
+/* footMiddle elements : */
+#footMiddle {
+  width: 260px;
+}
+
+.footerTitle {
+  font-size: 12px;
+  padding-top: 10px;
+  padding-left: 38px;
+}
+
+.containContact {
+  display: flex;
+  margin-top: 40px;
+  width: 240px;
+  padding-left: 30px;
+}
+
+#locationPng {
+  width: 12%;
+  height: 12%;
+}
+
+#locationAdress {
+  font-size: 15px;
+  padding-left: 8px;
+}
+
+#telPng {
+  width: 12%;
+  height: 12%;
+  padding-left: 5px;
+}
+
+#telNumber {
+  padding-left: 8px;
+  font-size: 12px;
+}
+
+/* footerTitle elements :  */
+
+#footRight {
+  margin-right: 150px;
+  padding-left: 40px;
+}
+
+#footerTitleStay {
+  font-size: 12px;
+  padding-top: 10px;
+}
+
+#buttonCase {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+#textInput {
+  height: 30px;
+  width: 180px;
+  background-color: #38345e;
+  padding-right: 5px;
+  border: solid 0.5px white;
+}
+
+#textInput:focus {
+  border: 4px solid;
+  outline: none;
+  color: white;
+}
+
+#subscribeButton {
+  height: 30px;
+  width: 50px;
+  color: grey;
+  background-color: rgb(103, 100, 100);
+}
+
+#socialNetworks {
+  padding-top: 20px;
+}
+
+.logoSocialNetworks {
+  height: 30px;
+  padding-left: 4px;
+  transition: transform 0.3s;
+}
+
+.logoSocialNetworks:hover {
+  transform: scale(1.2);
+  box-shadow: 0px 0px 5px yellow;
+  color: #5d57c3;
+  border-radius: 50%;
+}
+
+#copyright {
+  display: flex;
+  justify-content: right;
+  padding-top: 30px;
 }
