@@ -1,27 +1,105 @@
 * {
-    box-sizing: inherit;
-    margin: 0;
-    padding: 0;
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-    box-sizing: border-box;
-    font-size: 62.5%;
+  box-sizing: border-box;
+  font-size: 62.5%;
 }
 
-header {
-    background-image: url("Images/bgk-header.png");
-    background-size: auto;
+#mainvideo {
+  display: flex;
+  background-image: url(./Images/bgk-middle.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  align-content: center;
+  justify-content: center;
 }
 
-#mainVideo {
-    background-image: url("Images/bgk-middle.png");
+.play_btn_text {
+  display: flex;
+  color: white;
+  font-weight: bold;
+  font-size: 11px;
+  padding-top: 15px;
+  text-transform: uppercase;
+  font-family: "Signika", sans-serif;
 }
 
-#mainTeam {
-    background-image: url("Images/bgk-header.png");
+#fourthblock {
+  padding-bottom: 70px;
+  padding-top: 40px;
+}
+#fourthblock h2 {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+#fourthblock p {
+  font-size: 11px;
+  color: grey;
+  text-align: center;
 }
 
-footer {
-    background-image: url("Images/bgk-footer.png");
+hr {
+  border: none;
+  border-top: 1px solid grey;
+  width: 40px;
+  padding-bottom: 50px;
+  margin: auto;
+}
+#fourthblock ul {
+  display: flex;
+  justify-content: center;
+  padding-right: 40px;
+  margin-bottom: 0px;
+  font-family: "Oswald", sans-serif;
+  font: 200;
+}
+
+#fourthblock li {
+  display: block;
+  width: 250px;
+  padding: 0px 20px;
+}
+
+#fourthblock img {
+  width: 50px;
+  margin: 0 auto;
+  display: block;
+  padding-top: 20px;
+}
+
+#fourthblock h3 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+#fourthblock p {
+  text-size: 11px;
+  color: grey;
+  text-align: center;
+  padding-bottom: 1rem;
+  padding-top: 10px;
+  margin-bottom: 0.5rem;
+}
+
+#fourthblock li:nth-child(n + 2) {
+  border-left: 1px solid #99999940;
+}
+
+#fourthblock ul li img {
+  width: auto;
+  height: 64px;
+}
+
+.ul_li_two li {
+  border-top: 1px solid #99999940;
 }
