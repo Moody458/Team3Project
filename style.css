@@ -5,6 +5,8 @@
   line-height: 2.6rem;
   /* Added Roboto as universal but some sections need another font */
   font-family: "Roboto", sans-serif;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
 
@@ -20,10 +22,10 @@ html {
 header {
     background-image: url("Images/bgk-header.png");
     background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-position: center;
-    color: white;
-    
+    background-size: cover;
+    background-position:bottom;
+    color: white; 
+    /* padding: 0 10%; */
 }
 
 #headerLine {
@@ -50,15 +52,16 @@ header a {
 
 #headerTop {
     display: flex;
-    justify-content: space-around;
-    padding-top: 1rem;
-    padding-bottom: 10rem;
+    justify-content: center;
+    padding-top: 0;
+    padding-bottom: 10%;
 }
 
 #headerNav {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-left: 10%;
 }
 
 #headerNavList {
@@ -76,7 +79,7 @@ header a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 14rem;
+    padding-bottom: 10%;
 }
 
 #mainHeader {
@@ -114,7 +117,7 @@ header a {
   background-image: url(./Images/bgk-middle.png);
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
+  background-position:center;
   padding-top: 150px;
   padding-bottom: 150px;
   align-content: center;
@@ -134,14 +137,21 @@ header a {
 #fourthblock {
   padding-bottom: 70px;
   padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
+
+
 #fourthblock h2 {
   font-size: 20px;
   text-align: center;
   margin-bottom: 0.5rem;
+  font-family: "Playfair Display", serif;
   font-weight: 500;
   line-height: 1.2;
 }
+
 #fourthblock p {
   font-size: 11px;
   color: grey;
@@ -179,16 +189,17 @@ hr {
 
 #fourthblock h3 {
   text-align: center;
-  margin-bottom: 0.5rem;
+  margin-bottom: 5%;
+  padding-top: 5%;
 }
 
 #fourthblock p {
-  text-size: 11px;
+  /* font-size: 11px; */
   color: grey;
   text-align: center;
   padding-bottom: 1rem;
-  padding-top: 10px;
   margin-bottom: 0.5rem;
+  line-height: normal;
 }
 
 #fourthblock li:nth-child(n + 2) {
@@ -206,6 +217,9 @@ hr {
 
 #mainTeam {
   background-image: url("Images/bgk-header.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:bottom;
   color: white;
   text-align: center;
   padding: 40px;
@@ -366,10 +380,14 @@ hr {
 
 footer {
   background-image: url("Images/bgk-footer.png");
-  width: 1200px;
-  height: 800 px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:bottom;
   display: flex;
   color: white;
+  justify-content: center;
+  padding-top: 3%;
+  align-items: center;
 }
 
 /* footleft elements :  */
